@@ -298,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.838427, y: 0.41360003, z: -10}
+  m_LocalPosition: {x: 0, y: 0.6916, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 875671171}
   - component: {fileID: 875671170}
   - component: {fileID: 875671175}
+  - component: {fileID: 875671176}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -371,10 +372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a7f96cb92eb5b4b845100063d673ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 10
+  moveSpeed: 2.06
+  jumpForce: 3.91
   maxHealth: 100
-  damageAmount: 20
 --- !u!61 &875671171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.025360376}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -418,7 +418,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.77, y: 0.77}
+  m_Size: {x: 0.77, y: 0.7192792}
   m_EdgeRadius: 0
 --- !u!50 &875671172
 Rigidbody2D:
@@ -510,7 +510,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -535,6 +535,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &875671176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875671169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cf4c70506e5d54ba85011297410969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1317703614745510800, guid: f4d1febf82dfce24bb78673d8e757015, type: 3}
+  shootForce: 15.58
 --- !u!1 &885656677
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,8 +1012,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 875671174}
+  m_Follow: {fileID: 875671174}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 1.82
@@ -1028,7 +1042,7 @@ Transform:
   m_GameObject: {fileID: 2107544934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.838427, y: 0.41360003, z: -10}
+  m_LocalPosition: {x: 0, y: 0.6916, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
